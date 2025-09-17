@@ -9,5 +9,5 @@ metadata:
   description: An example of a Instance Creation. # Change Description accordingly
 spec:
   type: service
-  owner: rafaelscone:admin
+  owner: admin
   lifecycle: experimental
