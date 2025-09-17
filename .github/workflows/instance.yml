@@ -49,6 +49,10 @@ jobs:
     - name: Terraform FMT
       run: terraform fmt
       working-directory: .
+
+    - name: terraform apply
+      run: terraform apply -var instanceName=${{ github.event.inputs.instanceName }} -var awsRegion=${{ github.event.inputs.awsRegion }} -var instanceType=${{ github.event.inputs.instanceType }} -auto-approve
+      working-directory: .
       
       
     # Destroy all resources 
