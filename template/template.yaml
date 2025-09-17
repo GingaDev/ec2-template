@@ -72,7 +72,7 @@ spec:
       name: Publishing Details
       action: publish:github
       input:
-        allowedHosts: ['github.com']
+        #allowedHosts: ['github.com']
         description: This repo is to create an ec2 instance ${{ parameters.InstanceName }} using backstage.
         repoUrl: ${{ parameters.repoUrl }}
         repoVisibility: public # or 'internal' or 'private'
